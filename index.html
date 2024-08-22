@@ -11,7 +11,7 @@
     <title>Nina Carducci photographe professionnelle</title>
     <meta
       name="description"
-      content="Capturer les moments les plus précieux de votre vie avec créativité et passion. Photographe professionnelle situé à Versailles, spécialisée dans les portraits, les mariages et les événements. Des images authentiques et intemporelles qui racontent votre histoire. Réservez votre séance photo dès maintenant !"
+      content="Capturer les moments les plus précieux de votre vie avec créativité et passion. Photographe professionnelle situé à Bordeaux, spécialisée dans les portraits, les mariages et les événements. Des images authentiques et intemporelles qui racontent votre histoire. Réservez votre séance photo dès maintenant !"
     />
     <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -23,7 +23,7 @@
     <meta property="og:url" content="https://ernais7.github.io/NinaCarducci/" />
     <meta
       property="og:description"
-      content="Capturer les moments les plus précieux de votre vie avec créativité et passion. Photographe professionnelle situé à Versailles, spécialisée dans les portraits, les mariages et les événements. Des images authentiques et intemporelles qui racontent votre histoire. Réservez votre séance photo dès maintenant !"
+      content="Capturer les moments les plus précieux de votre vie avec créativité et passion. Photographe professionnelle situé à Bordeaux, spécialisée dans les portraits, les mariages et les événements. Des images authentiques et intemporelles qui racontent votre histoire. Réservez votre séance photo dès maintenant !"
     />
     <meta property="og:image" content="https://ernais7.github.io/NinaCarducci/assets/images/nina.webp" />
     <!-- Twitter Cards -->
@@ -36,25 +36,86 @@
     />
     <meta name="twitter:image" content="https://ernais7.github.io/NinaCarducci/assets/images/nina.webp" />
     <meta name="twitter:url" content="https://ernais7.github.io/NinaCarducci/" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Nina Carducci",
+        "alternateName": "Photographer",
+        "url": "https://ninacarducci.github.io/",
+        "image": "https://ernais7.github.io/NinaCarducci/assets/images/nina.webp",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "postalCode": "33200",
+          "addressCountry": "FR"
+        },
+        "telephone": "+33 5 56 67 78 89",
+        "openingHours": "Mo-Fr 10:00-19:00",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "44.848708",
+          "longitude": "-0.578790"
+        },
+        "sameAs": ["https://www.instagram.com/ninacarducci.photo"],
+        "priceRange": "€50 - €400",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Shooting photo",
+            "description": "Pour capturer vos moments les plus précieux. Déplacement en Île-de-France inclus.",
+            "price": "350",
+            "priceCurrency": "EUR",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "unitText": "Demi journée"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Retouches",
+            "description": "Retouches pour un résultat professionnel avec 2 aller-retours par photo.",
+            "price": "50",
+            "priceCurrency": "EUR",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "unitText": "Photo"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Album photos",
+            "description": "Album photo personnalisé A4, 30 pages recto/verso.",
+            "price": "400",
+            "priceCurrency": "EUR",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "unitText": "Album A4"
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
+    <div class="top-header">
+      <h3 class="name">Nina Carducci</h3>
+      <nav>
+        <div class="nav">
+          <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#gallery">Galerie</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="Logo Instagram" /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
     <header>
-      <div class="top-header">
-        <h3 class="name">Nina Carducci</h3>
-        <nav>
-          <div class="nav">
-            <ul>
-              <li><a href="#about">À propos</a></li>
-              <li><a href="#gallery">Galerie</a></li>
-              <li><a href="#services">Service</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li>
-                <a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="Logo Instagram" /></a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
       <div id="header">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -89,7 +150,7 @@
         </div>
         <div id="about-me">
           <h3 class="about-me__title">A propos de moi</h3>
-          <h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
+          <h4 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h4>
           <p>
             Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre. C’est ce que je vous propose : saisir ces
             merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.
@@ -127,7 +188,7 @@
     </main>
     <footer>
       <div id="services">
-        <h3 class="title">Mes services</h3>
+        <h2 class="title">Mes services</h2>
         <div class="container">
           <div class="service">
             <div class="service__description">
@@ -173,7 +234,7 @@
       <div id="contact">
         <div class="container">
           <div class="form-container">
-            <h3>Une question ? Une demande de devis ?</h3>
+            <h2>Une question ? Une demande de devis ?</h2>
             <p>N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
             <form action="" method="post">
               <label for="nom">Nom</label>
