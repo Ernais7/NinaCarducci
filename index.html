@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="./assets/style.min.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet" />
@@ -99,7 +99,7 @@
     </script>
   </head>
   <body>
-    <div class="top-header">
+    <header class="top-header">
       <h3 class="name">Nina Carducci</h3>
       <nav>
         <div class="nav">
@@ -114,9 +114,9 @@
           </ul>
         </div>
       </nav>
-    </div>
-    <header>
-      <div id="header">
+    </header>
+    <main>
+      <section id="header">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -134,17 +134,15 @@
               <img src="./assets/images/slider/edward-cisneros.webp" class="d-block w-100" alt="photo de marié qui s'embrasse" />
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+          <button aria-label="previous" class="carousel-control-prev opacity" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon button-test"></span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+          <button aria-label="next" class="carousel-control-next opacity" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon button-test"></span>
           </button>
         </div>
-      </div>
-      <div id="about">
+      </section>
+      <section id="about">
         <div class="picture left">
           <img src="./assets/images/nina.webp" alt="photo de Ninca Carducci" />
         </div>
@@ -156,10 +154,8 @@
             merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.
           </p>
         </div>
-      </div>
-    </header>
-    <main>
-      <div id="gallery">
+      </section>
+      <section id="gallery">
         <h3 class="title">Portfolio</h3>
         <div class="container py-3">
           <div class="gallery" style="display: none">
@@ -184,10 +180,8 @@
             <figcaption class="quote__author">- Richard Avedon</figcaption>
           </figure>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div id="services">
+      </section>
+      <section id="services">
         <h2 class="title">Mes services</h2>
         <div class="container">
           <div class="service">
@@ -221,34 +215,33 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="quote">
+      </section>
+      <section class="quote">
         <figure>
           <blockquote>
             <h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
           </blockquote>
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
-      </div>
-
-      <div id="contact">
-        <div class="container">
-          <div class="form-container">
-            <h2>Une question ? Une demande de devis ?</h2>
-            <p>N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
-            <form action="" method="post">
-              <label for="nom">Nom</label>
-              <input type="text" name="nom" id="nom" />
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" />
-              <label for="message">Message</label>
-              <textarea name="message" id="message" cols="30" rows="10"></textarea>
-              <input type="submit" value="Envoyer" />
-            </form>
-          </div>
-          <div class="picture right">
-            <img src="./assets/images/camera.webp" alt="image d'un appareil photo" />
-          </div>
+      </section>
+    </main>
+    <footer id="contact">
+      <div class="container">
+        <div class="form-container">
+          <h2>Une question ? Une demande de devis ?</h2>
+          <p>N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
+          <form action="" method="post">
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom" />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <input type="submit" value="Envoyer" />
+          </form>
+        </div>
+        <div class="picture right">
+          <img src="./assets/images/camera.webp" alt="image d'un appareil photo" />
         </div>
       </div>
     </footer>
